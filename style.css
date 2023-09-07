@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Josefin Sans;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #F4F4DC;
+}
+
+
+.Background-Container {
+    display: flex;
+    background: linear-gradient(108deg, #4B3195 0%, #221037 100%);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.Background-Container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Conteiner-Banner-Festivais {
+    padding: 10vh 0 0 10vw;
+    height: 100vh;
+}
+
+.Area-Logos {
+    display: flex;
+    position: relative;
+}
+
+.Logo {
+    color: #fff;
+    font-size: 1.5rem;
+    width: fit-content;
+}
+
+.Logo-Festival {
+    position: absolute;
+    left: calc(50% - 150px) ;
+    width: 150px;
+}
+
+.Content-Conteiner {
+    display: flex;
+    padding-top: 100px ;
+    height: calc(100vh - 10vh - 100px);
+}
+
+.Area-Contagem {
+    display: flex;
+}
+
+.Contagem-PaginaAtual {
+    color: #F4F4DC;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.Contagem-NumPages {
+    color: #F4F4DC;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.Area-Informacoes {
+    padding-left: 100px;
+}
+
+.Descritivo-Festival {
+    color: #F4F4DC;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.075rem;
+    margin-bottom: 20px;
+}
+
+.Nome-Festival {
+    color: #F4F4DC;
+    font-size: 4rem;
+    font-weight: 600;  
+}
+
+.Action-Area {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Button-Ant ,
+.Button-Next {
+    background-color: transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    border: 1px #FFFFFF30 solid;
+}
+
+.Button-Next {
+    border: 1px #FFDF00 solid;
+    color: #FFDF00;
+}
+
+.Botao-Local {
+    margin-left: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px);
+    padding: 20px;
+    border: 1px #FFDF00 solid;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.Area-Line-Up {
+    padding-top: 100px;
+}
+
+.Descritivo-Line-Up {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0.09375rem;
+    margin-bottom: 30px;
+}
+
+.Lista-Artista {
+    display: flex;
+    color: #fff;
+    list-style: none;
+}
+
+.Artista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.Artista:not(:first-child) {
+    margin-left: 20px;
+}
+
+.Imagem-Artista {
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 4px #FEC059 solid;
+}
+
+.Artista2 .Imagem-Artista {
+    border: 4px #04B1C2 solid;
+}
+
+.Artista3 .Imagem-Artista {
+    border: 4px #FC9063 solid;
+}
+
+.Artista4 .Imagem-Artista {
+    border: 4px #FD3E78 solid;
+}
+
+.Nome-Artista {
+    margin-top: 14px;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+}
+
+.Container-Sobre-BLR {
+    width: 100%;
+    padding: 0 15vw 0 15vw;
+}
+
+.Area-Patrocinadores {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+.Titulo-Area-Patrocinadores {
+    color: #C1C182;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.06563rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.Lista-de-Patrocinadores {
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.Area-Infos-BLR {
+    display: flex;
+    margin-top: 120px;
+}
+
+.Area-Texto-Info-BLR {
+    position: relative;
+    width: 50%;
+}
+
+.Descorador.Descorador-Elipse {
+    position: absolute;
+    top: -23px;
+    left: -16px;
+    z-index: -1;
+}
+
+.Titulo-Info-BLR {
+    color: #F7AF62;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.Texto-Info-BLR {
+    color: #828282;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.Numeros-BLR {
+    list-style: none;
+    display: flex;
+    margin-top: 40px;
+}
+
+.Numeros-BLR li:not(:first-child) {
+    margin-left: 80px;
+}
+
+.Numeros-BLR li {
+    text-align: center;
+}
+
+.Numeros-BLR li h3 {
+    color: #04B1C2;
+    font-size: 1.6rem;
+}
+
+.Numeros-BLR li p {
+    color: #5DC7D1;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4px;
+}
+
+.Area-Imagem-Info-BLR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.Area-Imagem-Info-BLR img{
+    height: 100%;
+}
+
+.Area-Video-BLR {
+    position: relative;
+    margin-top: 40px;
+}
+
+.Container-Video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background-color: #E0E0BD;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    background: linear-gradient(108deg, #FF95B4 0%, #F6AF62 51.04%, #FEC059 100%);
+    width: 100%;
+    height: 100px;
+    margin-top: 120px;
+}
+
+@media screen and (max-width: 800px){
+	.Logo-Festival {
+        right: 10vw;
+        left: auto;
+    }
+}
+
+@media screen and (max-width: 700px){
+	.Content-Conteiner {
+        flex-direction: column;
+    }
+    
+    .Area-Informacoes {
+        padding-left: 0;
+    }
+}
