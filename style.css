@@ -181,6 +181,68 @@ body {
     letter-spacing: 0.075rem;
 }
 
+/*Sobreposicoes*/
+.Card-Bio-Artista {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    z-index: 99;
+    display: flex;
+    width: 700px;
+    border-radius: 1.125rem;
+    border: 0.497px solid #9494945f;
+    background: linear-gradient(106deg, rgba(0, 0, 0, 0.51) 0.01%, rgba(71, 71, 71, 0.29) 100%);
+    backdrop-filter: blur(2px);
+    padding: 50px 70px 50px 70px;
+}
+
+.Area-Foto-Artista img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #04B1C2;
+}
+
+.Area-Foto-Artista p {
+    margin-top: 10px;
+    color: #04B1C2;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.Area-Bio-Artista {
+    padding-left: 30px;
+}
+
+.Area-Bio-Artista h2 {
+    color: #FFC0D1;
+    font-size: 1.67644rem;
+    font-weight: 600;
+}
+
+.Area-Bio-Artista p {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.Area-Bio-Artista .Numeros-BLR li h3 {
+    color: #fff;
+}
+
+.Area-Bio-Artista .Numeros-BLR li p {
+    color: #E0E0E0;
+}
+
+.Decorador-Spot-Luz {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+}
+
 .Container-Sobre-BLR {
     width: 100%;
     padding: 0 15vw 0 15vw;
