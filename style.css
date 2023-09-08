@@ -182,18 +182,45 @@ body {
 }
 
 /*Sobreposicoes*/
+.Botao-Fechar-Card-Bio-Artista {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #ec5f5a;
+    transition: .3s;
+    background: rgba(255, 255, 255, 0.796);
+}
+
+.Botao-Fechar-Card-Bio-Artista:hover {
+    background-color: #fff;
+}
+
 .Card-Bio-Artista {
     position: absolute;
     left: 50%;
     top: 20%;
     z-index: 99;
-    display: flex;
+    display: none;
     width: 700px;
     border-radius: 1.125rem;
     border: 0.497px solid #9494945f;
     background: linear-gradient(106deg, rgba(0, 0, 0, 0.51) 0.01%, rgba(71, 71, 71, 0.29) 100%);
     backdrop-filter: blur(2px);
     padding: 50px 70px 50px 70px;
+}
+
+.Card-Bio-Artista.Aberto {
+    display: flex;
 }
 
 .Area-Foto-Artista img {
@@ -241,10 +268,16 @@ body {
     position: absolute;
     left: 50%;
     top: 10%;
+    display: none;
+}
+
+.Decorador-Spot-Luz.Ativo {
+    display: block;
 }
 
 /*Card Saiba Mais*/
 .Background-Blind {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -255,14 +288,17 @@ body {
     z-index: 10;
 }
 
+.Background-Blind.Ativo {
+    display: block;
+}
+
 .Botao-Fechar-Card-Saiba-Mais {
     position: absolute;
     top: 10px;
     right: 10px;
     z-index: 999;
     display: flex;
-    background-color: #ec5f5a90;
-    border: 2px #ec5f5a84 solid;
+    background-color: #ec5f5a;
     backdrop-filter: blur(10px);
     width: fit-content;
     padding: 16px 24px;
@@ -274,6 +310,7 @@ body {
 
 .Botao-Fechar-Card-Saiba-Mais:hover {
     background-color: #ec5f5a;
+    cursor: pointer;
 }
 
 .Botao-Fechar-Card-Saiba-Mais i {
@@ -282,6 +319,7 @@ body {
 
 
 .Card-Saiba-Mais {
+    display: none;
     position: absolute;
     left: 45%;
     top: 20%;
@@ -294,6 +332,10 @@ body {
     padding: 36px 50px 36px 50px;
     overflow-y: scroll;
     max-height: 60vh;
+}
+
+.Card-Saiba-Mais.Aberto {
+    display: block;
 }
 
 .Card-Saiba-Mais::-webkit-scrollbar {
@@ -332,7 +374,6 @@ body {
     width: 100%;
     margin-top: 10px;
     border-radius: 10px;
-    border: 10px #04B1C2 solid;
 }
 
 /*Conteiner Sobre BLR*/
