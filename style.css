@@ -160,18 +160,21 @@ body {
     height: 80px;
     width: 80px;
     border-radius: 50%;
+}
+
+#artista1 .Imagem-Artista {
     border: 4px #FEC059 solid;
 }
 
-.Artista2 .Imagem-Artista {
+#artista2 .Imagem-Artista {
     border: 4px #04B1C2 solid;
 }
 
-.Artista3 .Imagem-Artista {
+#artista3 .Imagem-Artista {
     border: 4px #FC9063 solid;
 }
 
-.Artista4 .Imagem-Artista {
+#artista4 .Imagem-Artista {
     border: 4px #FD3E78 solid;
 }
 
