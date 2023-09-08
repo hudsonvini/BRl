@@ -255,6 +255,32 @@ body {
     z-index: 10;
 }
 
+.Botao-Fechar-Card-Saiba-Mais {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    display: flex;
+    background-color: #ec5f5a90;
+    border: 2px #ec5f5a84 solid;
+    backdrop-filter: blur(10px);
+    width: fit-content;
+    padding: 16px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #fff;
+    transition: .3s;
+}
+
+.Botao-Fechar-Card-Saiba-Mais:hover {
+    background-color: #ec5f5a;
+}
+
+.Botao-Fechar-Card-Saiba-Mais i {
+    margin-left: 8px;
+}
+
+
 .Card-Saiba-Mais {
     position: absolute;
     left: 45%;
@@ -279,7 +305,8 @@ body {
   }
 
 .Card-Saiba-Mais::-webkit-scrollbar-thumb {
-    background: rgba(255, 223, 0, 0.41);   /* color of the scroll thumb */
+    background: rgba(255, 223, 0, 0.41);
+    background: transparent;   /* color of the scroll thumb */
     border-radius: 10px;       /* roundness of the scroll thumb */
     border: 3px solid transparent;  /* creates padding around scroll thumb */
 }
@@ -299,6 +326,13 @@ body {
     font-family: Inter;
     font-size: 1rem;
     margin-top: 10px;
+}
+
+.Card-Saiba-Mais img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 10px #04B1C2 solid;
 }
 
 /*Conteiner Sobre BLR*/
