@@ -233,7 +233,8 @@ body {
 
 .Card-Bio-Artista.Aberto {
     display: flex;
-    animation: jackInTheBox ;
+    animation: fadeInRight ;
+    animation: backInDown;
     animation-duration: .8s;
 }
 
@@ -283,10 +284,22 @@ body {
     left: 50%;
     top: 10%;
     display: none;
+    opacity: 0;
 }
 
 .Decorador-Spot-Luz.Ativo {
     display: block;
+    animation: Decorador-Spot-Luz .3s forwards linear;
+    animation-delay: .8s;
+}
+
+@keyframes Decorador-Spot-Luz {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /*Card Saiba Mais*/
@@ -350,6 +363,8 @@ body {
 
 .Card-Saiba-Mais.Aberto {
     display: block;
+    animation: backInDown;
+    animation-duration: 1s;
 }
 
 .Card-Saiba-Mais::-webkit-scrollbar {
