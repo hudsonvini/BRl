@@ -25,13 +25,22 @@ body {
     z-index: -1;
 }
 
-.Background-Container img {
+.Background-Container .background-fundo  {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -10;
+}
+
+.Elemento-Musicos {
+    position: absolute;
+    height: 80%;
+    bottom: 0;
+    right: 0;
 }
 
 .Conteiner-Banner-Festivais {
+    position: relative;
     padding: 10vh 0 0 10vw;
     height: 100vh;
 }
@@ -224,6 +233,8 @@ body {
 
 .Card-Bio-Artista.Aberto {
     display: flex;
+    animation: jackInTheBox ;
+    animation-duration: .8s;
 }
 
 .Area-Foto-Artista img {
@@ -503,6 +514,15 @@ footer {
 	.Logo-Festival {
         right: 10vw;
         left: auto;
+    }
+
+    .Area-Texto-Info-BLR {
+        width: 100%;
+    }
+
+    .Area-Imagem-Info-BLR {
+        display: none;
+        width: 0;
     }
 }
 
