@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Source+Code+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Source+Code+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
@@ -16,7 +16,6 @@ body {
 
 .Background-Container {
     display: flex;
-    background: linear-gradient(108deg, #4B3195 0%, #221037 100%);
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -494,9 +493,16 @@ body {
     margin-top: 20px;
 }
 
+.Area-Logo-Central-BRL {
+    display:flex ;
+    justify-content: center;
+   width: 100%;
+   margin-top: 40px;
+}
+
 .Area-Infos-BLR {
     display: flex;
-    margin-top: 120px;
+    margin-top: 40px;
 }
 
 .Area-Texto-Info-BLR {
@@ -583,8 +589,29 @@ body {
 footer {
     background: linear-gradient(108deg, #FF95B4 0%, #F6AF62 51.04%, #FEC059 100%);
     width: 100%;
-    height: 100px;
+    padding: 14px 0;
     margin-top: 120px;
+    color: #f4f4dc;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.redes-sociais a:not(:first-child) {
+    margin-left: 18px;
+}
+
+.redes-sociais a svg {
+    height: 32px;
+}
+
+footer p {
+    font-family: 'Inter';
+    font-size: 14px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1500px){
