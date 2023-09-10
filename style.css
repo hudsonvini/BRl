@@ -586,6 +586,15 @@ body {
     margin-top: 20px;
 }
 
+.Video-Vimeo {
+    margin-top: 20px;
+}
+
+.Video-Vimeo iframe {
+    border-radius: 40px;
+    box-shadow: 20px 0 20px #00000015;
+}
+
 footer {
     background: linear-gradient(108deg, #FF95B4 0%, #F6AF62 51.04%, #FEC059 100%);
     width: 100%;
@@ -605,7 +614,7 @@ footer {
 }
 
 .redes-sociais a svg {
-    height: 32px;
+    height: 28px;
 }
 
 footer p {
@@ -695,7 +704,7 @@ footer p {
     }
 
     .Contagem-PaginaAtual {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .Contagem-NumPages {
@@ -703,8 +712,9 @@ footer p {
     }
 
     .Nome-Festival {
-        font-size: 52px;
+        font-size: 42px;
     }
+
 
     .Descritivo-Line-Up {
         font-size: 16px;
@@ -724,6 +734,9 @@ footer p {
 }
 
 @media screen and (max-width: 500px){
+    .Content-Conteiner {
+        padding-top: 60px;
+    }
     .Botao-Fechar-Card-Saiba-Mais {
         font-size: 14px;
         padding: 10px 16px;
@@ -742,7 +755,7 @@ footer p {
     }
 
     .Area-Line-Up {
-        padding-top: 80px;
+        padding-top: 40px;
     }
 
     .Lista-Artista {
@@ -778,6 +791,18 @@ footer p {
 
     .Numeros-BLR li p {
         font-size: 18px;
+    }
+    
+    .redes-sociais a:not(:first-child) {
+        margin-left: 18px;
+    }
+    
+    .redes-sociais a svg {
+        height: 24px;
+    }
+
+    footer p {
+        font-size: 12px;
     }
 }
 
