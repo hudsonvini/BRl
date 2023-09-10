@@ -14,8 +14,17 @@ botaoSaibaMais.addEventListener('click', () => {
 
 const botaoFecahrCardSaibaMais = document.querySelector('.Botao-Fechar-Card-Saiba-Mais');
 botaoFecahrCardSaibaMais.addEventListener('click', () => {
-    backgroundBlind.classList.remove('Ativo');
-    cardSaibaMais.classList.remove('Aberto')
+
+
+    cardSaibaMais.classList.add('Saida')
+    backgroundBlind.classList.add('Saida')
+    setTimeout(()=> {
+        cardSaibaMais.classList.remove('Saida')
+        backgroundBlind.classList.remove('Saida')
+
+        cardSaibaMais.classList.remove('Aberto')
+        backgroundBlind.classList.remove('Ativo')
+    }, 1000)
 });
 
 
@@ -81,7 +90,14 @@ ListaArtistas.forEach((Artista) => {
 
 const botaoFecahrCardBioArtista = document.querySelector('.Botao-Fechar-Card-Bio-Artista')
 botaoFecahrCardBioArtista.addEventListener('click' , () => {
-    cardBioArtista.classList.remove('Aberto')
-    decoradorSpotLuz.classList.remove('Ativo')
+    cardBioArtista.classList.add('Saida')
+    cardBioArtista.classList.add('Saida')
+    setTimeout(()=> {
+        cardBioArtista.classList.remove('Saida')
+        cardBioArtista.classList.remove('Saida')
+
+        cardBioArtista.classList.remove('Aberto')
+        decoradorSpotLuz.classList.remove('Ativo')
+    }, 1000)
 })
 

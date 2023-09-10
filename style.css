@@ -60,6 +60,10 @@ body {
     position: absolute;
     left: calc(50% - 150px) ;
     width: 150px;
+    opacity: 0;
+    animation: fadeInDown forwards;
+    animation-duration: .8s;
+    animation-delay: 1.2s;
 }
 
 .Content-Conteiner {
@@ -95,12 +99,18 @@ body {
     font-weight: 400;
     letter-spacing: 0.075rem;
     margin-bottom: 20px;
+    animation: fadeInLeft;
+    animation-duration: .5s;
 }
 
 .Nome-Festival {
     color: #F4F4DC;
+    opacity: 0;
     font-size: 4rem;
     font-weight: 600;  
+    animation: fadeInLeft forwards;
+    animation-duration: 1s;
+    animation-delay: .5s ;
 }
 
 .Action-Area {
@@ -259,14 +269,21 @@ body {
     animation-duration: .8s;
 }
 
+.Card-Bio-Artista.Saida {
+    animation: backOutUp forwards;
+    animation-duration: 1s;
+}
+
 .Area-Foto-Artista img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #04B1C2;
-    animation: heartBeat;
+    opacity: 0;
+    animation: fadeIn forwards;
     animation-duration: 1s;
+    animation-delay: .8s;
 }
 
 .Area-Foto-Artista p {
@@ -275,6 +292,10 @@ body {
     font-size: 1rem;
     font-weight: 500;
     text-align: center;
+    opacity: 0;
+    animation: fadeIn forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
 }
 
 .Area-Bio-Artista {
@@ -285,6 +306,10 @@ body {
     color: #FFC0D1;
     font-size: 1.67644rem;
     font-weight: 600;
+    opacity: 0;
+    animation: fadeInLeft forwards;
+    animation-duration: 1s;
+    animation-delay: 1.2s;
 }
 
 .Area-Bio-Artista p {
@@ -292,6 +317,10 @@ body {
     font-family: Inter;
     font-size: 0.8rem;
     margin-top: 10px;
+    opacity: 0;
+    animation: fadeInLeft forwards;
+    animation-duration: .8s;
+    animation-delay: 1.5s;
 }
 
 .Area-Bio-Artista .Numeros-BLR li h3 {
@@ -342,6 +371,11 @@ body {
     display: block;
 }
 
+.Background-Blind.Saida {
+    animation: fadeOut forwards;
+    animation-duration: 1s;
+}
+
 .Botao-Fechar-Card-Saiba-Mais {
     position: absolute;
     top: 10px;
@@ -387,6 +421,11 @@ body {
 .Card-Saiba-Mais.Aberto {
     display: block;
     animation: backInDown;
+    animation-duration: 1s;
+}
+
+.Card-Saiba-Mais.Saida {
+    animation: backOutUp forwards;
     animation-duration: 1s;
 }
 
