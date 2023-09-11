@@ -534,12 +534,32 @@ body {
     font-family: Inter;
     font-size: 1rem;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .Card-Saiba-Mais p b {
     font-size: 18px;
     color: #464646;
 }
+
+.Important-Text-Area {
+    display: flex;
+    margin-top: 10px;
+}
+
+.Important-Text-Area b.Important-text {
+    border: 1px #FFDF00 solid;
+    background-color: #FFDF00;
+    border-radius: 20px;
+    padding: 10px;
+    color: #2c2c2c;
+    font-weight: 400;
+}
+
+.Important-Text-Area b.Important-text:not(:first-child) {
+    margin-left: 10px;
+}
+
 
 .Card-Saiba-Mais img {
     width: 100%;
@@ -607,7 +627,8 @@ body {
 .Texto-Info-BLR {
     color: #828282;
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 140%;
     font-weight: 400;
     margin-top: 20px;
 }
@@ -679,7 +700,7 @@ body {
 /*Area Galeria de Fotos*/
 .Area-Galeria-Fotos {
     position: relative;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .ConteinerDestinosDestaque {
@@ -768,6 +789,18 @@ footer p {
     }
 }
 
+@media screen and (max-width: 1024px){
+    .Area-Imagem-Info-BLR {
+        display: none;
+    }
+
+    .Area-Texto-Info-BLR {
+        width: 100%;
+    }
+
+}
+
+
 @media screen and (max-width: 900px){
 	.Card-Saiba-Mais {
         left: 5% ;
@@ -837,6 +870,21 @@ footer p {
 @media screen and (max-width: 700px){
 	.Content-Conteiner {
         flex-direction: column;
+    }
+
+    .Important-Text-Area {
+        flex-wrap: wrap;
+    }
+
+    .Important-text {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .Important-Text-Area b.Important-text:not(:first-child) {
+        margin-left: 0px;
     }
 
     .Logo-Festival {
