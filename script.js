@@ -161,10 +161,10 @@ ListaArtistas.forEach((Artista) => {
 const botaoFecahrCardBioArtista = document.querySelector('.Botao-Fechar-Card-Bio-Artista')
 botaoFecahrCardBioArtista.addEventListener('click' , () => {
     cardBioArtista.classList.add('Saida')
-    cardBioArtista.classList.add('Saida')
+    decoradorSpotLuz.classList.add('Saida')
     setTimeout(()=> {
         cardBioArtista.classList.remove('Saida')
-        cardBioArtista.classList.remove('Saida')
+        decoradorSpotLuz.classList.remove('Saida')
 
         cardBioArtista.classList.remove('Aberto')
         decoradorSpotLuz.classList.remove('Ativo')
