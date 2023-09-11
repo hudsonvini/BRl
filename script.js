@@ -5,23 +5,26 @@ const backgroundBlind = document.querySelector('.Background-Blind');
 const cardSaibaMais = document.querySelector('.Card-Saiba-Mais');
 const botaoSaibaMais = document.querySelector('.Botao-Local');
 
+const botaoFecahrCardSaibaMais = document.querySelector('.Botao-Fechar-Card-Saiba-Mais');
 
 botaoSaibaMais.addEventListener('click', () => {
     backgroundBlind.classList.add('Ativo');
-    cardSaibaMais.classList.add('Aberto')
+    cardSaibaMais.classList.add('Aberto');
+    botaoFecahrCardSaibaMais.classList.add('Aberto')
 });
 
 
-const botaoFecahrCardSaibaMais = document.querySelector('.Botao-Fechar-Card-Saiba-Mais');
 botaoFecahrCardSaibaMais.addEventListener('click', () => {
 
-
+    botaoFecahrCardSaibaMais.classList.add('Saida')
     cardSaibaMais.classList.add('Saida')
     backgroundBlind.classList.add('Saida')
     setTimeout(()=> {
         cardSaibaMais.classList.remove('Saida')
         backgroundBlind.classList.remove('Saida')
+        botaoFecahrCardSaibaMais.classList.remove('Saida')
 
+        botaoFecahrCardSaibaMais.classList.remove('Aberto')
         cardSaibaMais.classList.remove('Aberto')
         backgroundBlind.classList.remove('Ativo')
     }, 1000)

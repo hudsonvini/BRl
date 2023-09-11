@@ -190,7 +190,7 @@ body {
 }
 
 .Lista-Artista::-webkit-scrollbar-thumb {
-    background-color: #FFDF00;
+    background-color: #FFDF0090;
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid transparent;
 
@@ -416,11 +416,11 @@ body {
 }
 
 .Botao-Fechar-Card-Saiba-Mais {
-    position: fixed;
-    top: 10px;
-    right: 10px;
+    position: absolute;
+    top: calc(20% - 20px) ;
+    right: 10%;
     z-index: 999;
-    display: flex;
+    display: none;
     background-color: #ec5f5a;
     backdrop-filter: blur(10px);
     width: fit-content;
@@ -429,11 +429,23 @@ body {
     font-size: 16px;
     color: #fff;
     transition: .3s;
+    z-index: 99999;
 }
 
 .Botao-Fechar-Card-Saiba-Mais:hover {
     background-color: #ec5f5a;
     cursor: pointer;
+}
+
+.Botao-Fechar-Card-Saiba-Mais.Aberto {
+    display: flex;
+    animation: backInDown;
+    animation-duration: 1s;
+}
+
+.Botao-Fechar-Card-Saiba-Mais.Saida {
+    animation: backOutUp forwards;
+    animation-duration: 1s;
 }
 
 .Botao-Fechar-Card-Saiba-Mais i {
@@ -525,7 +537,7 @@ body {
 
 .Titulo-Area-Patrocinadores {
     color: #C1C182;
-    font-size: 0.875rem;
+    font-size: 0.7rem;
     font-weight: 400;
     letter-spacing: 0.06563rem;
     text-transform: uppercase;
@@ -722,6 +734,10 @@ footer p {
         width: 800px;
         max-height: 60vh;
     } 
+
+    .Botao-Fechar-Card-Saiba-Mais {
+        right: 15%;
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -736,6 +752,11 @@ footer p {
     .Lista-Artista {
         width: 500px;
     }
+
+    .Botao-Fechar-Card-Saiba-Mais {
+        top: calc(10vh - 10px) ;
+    }
+
 }
 
 @media screen and (max-width: 800px){
